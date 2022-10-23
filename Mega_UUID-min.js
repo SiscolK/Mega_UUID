@@ -1,0 +1,1 @@
+const alp = "abcdefghijklmnopqrstuvwxyz0123456789";function uuid(size=1){this.uuid = "-";this.id = Date.now();this.mid = "";for(var i = 0; i < 15; i++){this.mid = this.mid + Math.floor(Math.random() * 9);};for(var i = 0; i < size; i++){for(var a = 0; a < 4; a++){this.uuid = this.uuid + alp[Math.floor(Math.random() * alp.length)];};this.uuid = this.uuid + "-";};};
